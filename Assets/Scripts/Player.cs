@@ -8,14 +8,23 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float _speed = 3.5f;
     private float _gravity = 1f;
+    private float _yVelocity;
 
     void Start()
     {
-        
+        _controller = GetComponent<CharacterController>(); 
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+
         MovePlayer();    
     }
 
