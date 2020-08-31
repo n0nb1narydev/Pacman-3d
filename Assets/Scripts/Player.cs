@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    CharacterController _controller;
+    [SerializeField]
+    private float _speed = 3.5f;
+    private float _gravity = 1f;
+
     void Start()
     {
         
@@ -11,7 +16,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        
+        MovePlayer();    
     }
 
     private void MovePlayer() 
