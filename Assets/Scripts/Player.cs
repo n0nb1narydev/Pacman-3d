@@ -9,10 +9,14 @@ public class Player : MonoBehaviour
     private float _speed = 3.5f;
     private float _gravity = 1f;
     private float _yVelocity;
+    [SerializeField]
+    private AudioSource _wakka;
+    private bool _isMoving = false;
+    
 
     void Start()
     {
-        _controller = GetComponent<CharacterController>(); 
+        StartCoroutine(WaitToMove());
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -24,8 +28,17 @@ public class Player : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
+        
+        if (Input.GetKeyDown(KeyCode.W) && _isMoving == true)
+        {
+            _wakka.Play();
+        }
+        else if (Input.GetKeyUp(KeyCode.W))
+        {
+            _wakka.Stop();
+        }
 
-        MovePlayer();    
+        MovePlayer();       
     }
 
     private void MovePlayer() 
@@ -41,5 +54,12 @@ public class Player : MonoBehaviour
         velocity = transform.transform.TransformDirection(velocity);
 
         _controller.Move(velocity * Time.deltaTime);
+    }
+    IEnumerator WaitToMove()
+    {
+        yield return new WaitForSeconds(4.1f);
+        _controller = GetComponent<CharacterController>(); 
+        _isMoving = true;
+          
     }
 }

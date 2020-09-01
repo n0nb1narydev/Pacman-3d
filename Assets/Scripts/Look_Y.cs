@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LookY : MonoBehaviour
+public class Look_Y : MonoBehaviour
 {
     private float _sensitivity = 1f;
     // Start is called before the first frame update
@@ -21,4 +21,3 @@ public class LookY : MonoBehaviour
         transform.localEulerAngles = newRotation;
     }
 }
-

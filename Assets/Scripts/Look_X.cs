@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LookX : MonoBehaviour
+public class Look_X : MonoBehaviour
 {
     [SerializeField]
     private float _sensitivity = 1.5f;
