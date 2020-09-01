@@ -38,7 +38,16 @@ public class Player : MonoBehaviour
             _wakka.Stop();
         }
 
-        MovePlayer();       
+        MovePlayer();  
+
+     if (transform.position.x >= 21f)
+        {
+            transform.position = new Vector3(-17f,transform.position.y, 0);
+        } 
+        else if ( transform.position.x <= -18f )
+        {
+            transform.position = new Vector3( 20f, transform.position.y, 0);
+        } 
     }
 
     private void MovePlayer() 
