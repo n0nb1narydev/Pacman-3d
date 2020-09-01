@@ -6,8 +6,11 @@ using UnityEngine.UI;
 public class UI_Manager : MonoBehaviour
 {  
     [SerializeField]
-        private Text _readyText;
-
+    private Text _readyText;
+    [SerializeField]
+    private Text _scoreText;
+    [SerializeField]
+    public int currentScore;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,5 +26,9 @@ public class UI_Manager : MonoBehaviour
     {
         yield return new WaitForSeconds(4.2f);
         _readyText.gameObject.SetActive(false);
+    }
+    public void UpdateScore(int currentScore)
+    {
+        _scoreText.text = "Score: " + currentScore;
     }
 }

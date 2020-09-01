@@ -2336,7 +2336,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -6027,7 +6027,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 2.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -7223,6 +7223,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _readyText: {fileID: 312760449}
+  _scoreText: {fileID: 750033274}
+  currentScore: 0
 --- !u!1 &599278051
 GameObject:
   m_ObjectHideFlags: 0
@@ -7348,7 +7350,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 2.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -17337,7 +17339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 3.5
-  _wakka: {fileID: 0}
+  _wakka: {fileID: 1100769245}
 --- !u!143 &1520179652
 CharacterController:
   m_ObjectHideFlags: 0
@@ -18607,7 +18609,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 2.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

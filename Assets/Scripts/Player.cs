@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Player : MonoBehaviour
 {
     CharacterController _controller;
@@ -12,6 +13,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private AudioSource _wakka;
     private bool _isMoving = false;
+    
     
 
     void Start()
@@ -52,8 +54,9 @@ public class Player : MonoBehaviour
 
     private void MovePlayer() 
     {
-        float horizontalInput = Input.GetAxis("Horizontal");  
-        float verticalInput = Input.GetAxis("Vertical");
+         float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical"); 
+
 
         Vector3 direction = new Vector3(horizontalInput, 0 , verticalInput);
         Vector3 velocity = _speed * direction;
