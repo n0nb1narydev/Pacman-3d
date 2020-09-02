@@ -19,9 +19,14 @@ public class Player : MonoBehaviour
   
     [SerializeField]
     private AudioSource _dead;
-    public bool isDead = false;
+    public bool isHit = false;
     [SerializeField]
-    private GameObject  _initialPos;
+    private Transform  _initialPos;
+    public bool canEatGhosts = false;
+    private UI_Manager _uiManager;
+    [SerializeField]
+    private int Yellow = 115;
+    
 
  
 
@@ -29,9 +34,12 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        _controller = GetComponent<CharacterController>(); 
         StartCoroutine(WaitToMove());
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        transform.position = _initialPos.position;
+        _uiManager = GameObject.Find("Canvas").GetComponent<UI_Manager>(); 
     }
 
     void Update()
@@ -53,7 +61,7 @@ public class Player : MonoBehaviour
 
         MovePlayer();  
 
-     if (transform.position.x >= 21f)
+        if (transform.position.x >= 21f)
         {
             transform.position = new Vector3(-17f,transform.position.y, 0);
         } 
@@ -61,14 +69,19 @@ public class Player : MonoBehaviour
         {
             transform.position = new Vector3( 20f, transform.position.y, 0);
         }
-        if(isDead == true)
-        {
-            DamagePlayer();
-        }
-    
     }
    
-   
+    private void OnTriggerEnter(Collider other) 
+    {
+        if(other.tag == "Yellow")
+        {
+            Yellow --;
+            if(Yellow == 0)
+            {
+                //YouWin
+            }
+        }    
+    }
 
     private void MovePlayer() 
     {
@@ -87,19 +100,27 @@ public class Player : MonoBehaviour
     }
     IEnumerator WaitToMove()
     {
+        _controller.enabled = false;
         yield return new WaitForSeconds(4.1f);
-        _controller = GetComponent<CharacterController>(); 
+        _controller.enabled = true;  
         _isMoving = true;
           
     }
-    public void DamagePlayer()
+    public IEnumerator HitPlayer()
     {
-        lives --;
+        isHit = true;
+        Restart();
+        lives -= 1;
         _dead.Play();
-        isDead = false;
-        Start();
-        // transform.position = _initialPos.transform.position;
+        _uiManager.UpdateLives(lives);
+        yield return new WaitForSeconds(1f);
+        isHit = false; 
     }
-
-
+    private void Restart()
+    {
+        _controller.enabled = false;
+        transform.position = _initialPos.position;
+        transform.rotation = _initialPos.rotation;
+        StartCoroutine(WaitToMove());  
+    }
 }

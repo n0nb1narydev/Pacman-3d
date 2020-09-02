@@ -11,6 +11,10 @@ public class Collectables : MonoBehaviour
     private Pinky _pinky;
     private Inky _inky;
     private Clyde _clyde;
+    public AudioSource _chase;
+    // public AudioSource _background;
+    
+    
 
     private void Start() 
     {
@@ -20,6 +24,7 @@ public class Collectables : MonoBehaviour
         _pinky = GameObject.Find("Pinky").GetComponent<Pinky>();
         _inky = GameObject.Find("Inky").GetComponent<Inky>();
         _clyde = GameObject.Find("Clyde").GetComponent<Clyde>();
+        // _background.Play();
     }
     private void OnTriggerEnter(Collider other) 
     {
@@ -40,17 +45,19 @@ public class Collectables : MonoBehaviour
             }
             else if (this.tag == "White")
             {
+                _chase.Play();
                 uiManager.currentScore += 50;
                 uiManager.UpdateScore(uiManager.currentScore);
                 Destroy(this.gameObject);
+                // StartCoroutine(RestartMusic());
                 StartCoroutine(PlayerCanEatGhosts());
-
             }
         }   
     }
 
     IEnumerator PlayerCanEatGhosts()
     {
+        player.canEatGhosts = true;
         _blinky.canBeEaten = true;
         _clyde.canBeEaten = true;
         _inky.canBeEaten = true;
@@ -60,6 +67,12 @@ public class Collectables : MonoBehaviour
         _clyde.canBeEaten = false;
         _inky.canBeEaten = false;
         _pinky.canBeEaten = false;
+        player.canEatGhosts = false;
     }
-
+    // IEnumerator RestartMusic()
+    // {
+    //     _background.Stop();
+    //     yield return new WaitForSeconds(10f);
+    //     _background.Play();
+    // }
 }
