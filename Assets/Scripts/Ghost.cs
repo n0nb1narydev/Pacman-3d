@@ -15,6 +15,8 @@ public class Ghost : MonoBehaviour
     [SerializeField]
     private AudioSource _eatGhost;
     private UI_Manager uiManager;
+    [SerializeField]
+    private bool canBeEaten;
 
 
     // Start is called before the first frame update
@@ -50,16 +52,16 @@ public class Ghost : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other) 
     {
-        if(other.tag == "Player" && player.canEatGhosts == true)
+        if(other.tag == "Player" && player.canEatGhosts == true && this.canBeEaten == true)
         {
             this.transform.position = new Vector3 (1.3f, 2.78f, 1.64f);
             _eatGhost.Play();
-            _scaredGhost.SetActive(false);
-            player.canEatGhosts = false;
+            this._scaredGhost.SetActive(false);
+            this.canBeEaten = false;    
         }
         else if(other.tag == "Player" && player.canEatGhosts == false)
         {
-            player.DamagePlayer();
+            
         }
     }
     IEnumerator WaitToMove()
@@ -69,14 +71,13 @@ public class Ghost : MonoBehaviour
     }
     IEnumerator RunAway()
     {
-        // transform.rotation = Quaternion.LookRotation(transform.position - _player.position);
+        canBeEaten = true;
         _nma.SetDestination((transform.position - player.transform.position));
         _scaredGhost.SetActive(true);
         yield return new WaitForSeconds(8f);
         StartCoroutine(FlashWarning());
         yield return new WaitForSeconds(10f);
-        _scaredGhost.SetActive(false);
-        player.canEatGhosts = false;
+        canBeEaten = false;
     }
     IEnumerator FlashWarning()
     {

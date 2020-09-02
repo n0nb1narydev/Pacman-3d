@@ -45,10 +45,15 @@ public class Collectables : MonoBehaviour
             uiManager.currentScore += 50;
             uiManager.UpdateScore(uiManager.currentScore);
             Destroy(this.gameObject);
-            player.canEatGhosts = true;
+            StartCoroutine(PlayerCanEatGhosts());
         }   
     }
 
-
+    IEnumerator PlayerCanEatGhosts()
+    {
+        player.canEatGhosts = true;
+        yield return new WaitForSeconds(10f);
+        player.canEatGhosts = false;
+    }
 
 }

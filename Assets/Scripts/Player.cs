@@ -84,8 +84,8 @@ public class Player : MonoBehaviour
         _isMoving = true;
           
     }
-    public void DamagePlayer()
-    {
+    // public void DamagePlayer()
+    // {
         // lives --;
     //     // if (lives == 2)
     //     // {
