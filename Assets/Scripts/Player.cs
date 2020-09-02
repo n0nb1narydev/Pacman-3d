@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class Player : MonoBehaviour
@@ -13,6 +14,12 @@ public class Player : MonoBehaviour
     [SerializeField]
     private AudioSource _wakka;
     private bool _isMoving = false;
+     [SerializeField]    
+    public int lives = 3;
+    public bool canEatGhosts = false;
+    [SerializeField]
+    private AudioSource _dead;
+ 
     
     
 
@@ -49,8 +56,11 @@ public class Player : MonoBehaviour
         else if ( transform.position.x <= -18f )
         {
             transform.position = new Vector3( 20f, transform.position.y, 0);
-        } 
+        }
+    
     }
+   
+   
 
     private void MovePlayer() 
     {
@@ -74,4 +84,27 @@ public class Player : MonoBehaviour
         _isMoving = true;
           
     }
+    public void DamagePlayer()
+    {
+        // lives --;
+    //     // if (lives == 2)
+    //     // {
+    //     //     StartCoroutine(LoadScene2()); 
+    //     //     _dead.Play();
+    //     // } else if (lives == 1)
+    //     // {
+    //     //     _dead.Play(); 
+    //     //     StartCoroutine(LoadScene2());   
+    //     // }
+    // }
+    // IEnumerator LoadScene2()
+    // {
+    //     yield return new WaitForSeconds(2f);
+    //     SceneManager.LoadScene(2);
+    // }
+    // IEnumerator LoadScene1()
+    // {
+    //     yield return new WaitForSeconds(2f);
+    //     SceneManager.LoadScene(1);
+    // }
 }

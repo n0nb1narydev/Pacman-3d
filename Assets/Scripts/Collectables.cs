@@ -5,11 +5,21 @@ using UnityEngine;
 public class Collectables : MonoBehaviour
 {
     private UI_Manager uiManager;
+    private Player player;
     public AudioSource _cherry;
+    private Ghost _blinky;
+    private Ghost _pinky;
+    private Ghost _inky;
+    private Ghost _clyde;
 
     private void Start() 
     {
         uiManager = GameObject.Find("Canvas").GetComponent<UI_Manager>();
+        player = GameObject.Find("Player").GetComponent<Player>();
+        // _blinky = GameObject.Find("Blinky").GetComponent<Ghost>();
+        // _pinky = GameObject.Find("Pinky").GetComponent<Ghost>();
+        // _inky = GameObject.Find("Inky").GetComponent<Ghost>();
+        // _clyde = GameObject.Find("Clyde").GetComponent<Ghost>();
     }
     private void OnTriggerEnter(Collider other) 
     {
@@ -32,9 +42,10 @@ public class Collectables : MonoBehaviour
         }
         else if (this.tag == "White")
         {
-            uiManager.currentScore += 10;
+            uiManager.currentScore += 50;
             uiManager.UpdateScore(uiManager.currentScore);
             Destroy(this.gameObject);
+            player.canEatGhosts = true;
         }   
     }
 
