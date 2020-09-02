@@ -200,8 +200,8 @@ GameObject:
   - component: {fileID: 164252407}
   - component: {fileID: 164252408}
   - component: {fileID: 164252406}
-  - component: {fileID: 164252403}
   - component: {fileID: 164252405}
+  - component: {fileID: 9146359748840128102}
   m_Layer: 0
   m_Name: Blinky
   m_TagString: Blinky
@@ -273,8 +273,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.5683482, y: 1, z: 1.0790505}
+  m_Center: {x: 0.009346932, y: 0, z: 0.03952527}
 --- !u!23 &164252406
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -314,26 +314,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &164252403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5838118508797670302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81887d71d636047a385b8f53c3fef4e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  canBeEaten: 0
-  _start: {fileID: 0}
-  _scaredGhost: {fileID: 40846238242975341}
-  Blinky: {fileID: 5838118508797670302}
-  Inky: {fileID: 8488336764547344660, guid: f5cdaa95522954816acf1c87b35bad77, type: 3}
-  Pinky: {fileID: 5865602025608226113, guid: 258aabb2cf1d04f5fa4a0d8099cd760b, type: 3}
-  Clyde: {fileID: 8201700483993406673, guid: fd05a4a68ab074c4f98403b174a49d1a, type: 3}
 --- !u!195 &164252405
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -356,6 +336,22 @@ NavMeshAgent:
   m_BaseOffset: 0.81
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &9146359748840128102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5838118508797670302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e70525a1bac54e06998a89f62e2b80e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _start: {fileID: 0}
+  _scaredGhost: {fileID: 40846238242975341}
+  _eatGhost: {fileID: 0}
+  canBeEaten: 0
 --- !u!1 &5838118508982691154
 GameObject:
   m_ObjectHideFlags: 0

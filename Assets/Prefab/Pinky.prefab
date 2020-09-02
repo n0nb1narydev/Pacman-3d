@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 1646089512}
   - component: {fileID: 1646089510}
   - component: {fileID: 1646089509}
-  - component: {fileID: 1646089513}
+  - component: {fileID: 6970572306951710148}
   m_Layer: 0
   m_Name: Pinky
   m_TagString: Pinky
@@ -180,8 +180,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.653727, y: 1, z: 1}
+  m_Center: {x: 0.021499073, y: 0, z: 0}
 --- !u!23 &1646089510
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -243,7 +243,7 @@ NavMeshAgent:
   m_BaseOffset: 0.81
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1646089513
+--- !u!114 &6970572306951710148
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -252,17 +252,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5865602025608226113}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81887d71d636047a385b8f53c3fef4e8, type: 3}
+  m_Script: {fileID: 11500000, guid: 799a46146efdc42d6902d207b7769686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  canBeEaten: 0
   _start: {fileID: 0}
   _scaredGhost: {fileID: 68391008517739496}
-  Blinky: {fileID: 5838118508797670302, guid: 0e3805e2d4ebc46ae95e7a5aa2fd986b, type: 3}
-  Inky: {fileID: 8488336764547344660, guid: f5cdaa95522954816acf1c87b35bad77, type: 3}
-  Pinky: {fileID: 5865602025608226113}
-  Clyde: {fileID: 8201700483993406673, guid: fd05a4a68ab074c4f98403b174a49d1a, type: 3}
+  _eatGhost: {fileID: 0}
+  canBeEaten: 0
 --- !u!1 &5865602025730828196
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,53 +7,59 @@ public class Collectables : MonoBehaviour
     private UI_Manager uiManager;
     private Player player;
     public AudioSource _cherry;
-    private Ghost _blinky;
-    private Ghost _pinky;
-    private Ghost _inky;
-    private Ghost _clyde;
+    private Blinky _blinky;
+    private Pinky _pinky;
+    private Inky _inky;
+    private Clyde _clyde;
 
     private void Start() 
     {
         uiManager = GameObject.Find("Canvas").GetComponent<UI_Manager>();
         player = GameObject.Find("Player").GetComponent<Player>();
-        // _blinky = GameObject.Find("Blinky").GetComponent<Ghost>();
-        // _pinky = GameObject.Find("Pinky").GetComponent<Ghost>();
-        // _inky = GameObject.Find("Inky").GetComponent<Ghost>();
-        // _clyde = GameObject.Find("Clyde").GetComponent<Ghost>();
+        _blinky = GameObject.Find("Blinky").GetComponent<Blinky>();
+        _pinky = GameObject.Find("Pinky").GetComponent<Pinky>();
+        _inky = GameObject.Find("Inky").GetComponent<Inky>();
+        _clyde = GameObject.Find("Clyde").GetComponent<Clyde>();
     }
     private void OnTriggerEnter(Collider other) 
     {
-    //     if(other.tag == "Player")
-    //     {
-    //         Destroy(this.gameObject);
-    //     }
-        if(this.tag == "Cherry")
+        if(other.tag == "Player")
         {
-            _cherry.Play();
-            uiManager.currentScore += 100;
-            uiManager.UpdateScore(uiManager.currentScore);
-            Destroy(this.gameObject);
-        }
-        else if (this.tag == "Yellow")
-        {
-            uiManager.currentScore += 10;
-            uiManager.UpdateScore(uiManager.currentScore);
-            Destroy(this.gameObject);
-        }
-        else if (this.tag == "White")
-        {
-            uiManager.currentScore += 50;
-            uiManager.UpdateScore(uiManager.currentScore);
-            Destroy(this.gameObject);
-            StartCoroutine(PlayerCanEatGhosts());
+            if(this.tag == "Cherry")
+            {
+                _cherry.Play();
+                uiManager.currentScore += 100;
+                uiManager.UpdateScore(uiManager.currentScore);
+                Destroy(this.gameObject);
+            }
+            else if (this.tag == "Yellow")
+            {
+                uiManager.currentScore += 10;
+                uiManager.UpdateScore(uiManager.currentScore);
+                Destroy(this.gameObject);
+            }
+            else if (this.tag == "White")
+            {
+                uiManager.currentScore += 50;
+                uiManager.UpdateScore(uiManager.currentScore);
+                Destroy(this.gameObject);
+                StartCoroutine(PlayerCanEatGhosts());
+
+            }
         }   
     }
 
     IEnumerator PlayerCanEatGhosts()
     {
-        player.canEatGhosts = true;
+        _blinky.canBeEaten = true;
+        _clyde.canBeEaten = true;
+        _inky.canBeEaten = true;
+        _pinky.canBeEaten = true;
         yield return new WaitForSeconds(10f);
-        player.canEatGhosts = false;
+        _blinky.canBeEaten = false;
+        _clyde.canBeEaten = false;
+        _inky.canBeEaten = false;
+        _pinky.canBeEaten = false;
     }
 
 }
