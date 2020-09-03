@@ -61,7 +61,7 @@ public class Inky : MonoBehaviour
                 StartCoroutine(WaitToMove(2f));
                 uiManager.currentScore += 200;  
                 uiManager.UpdateScore(uiManager.currentScore);
-                _eatGhost.Play();
+                StartCoroutine(player.EatsGhost());
                 _scaredGhost.SetActive(false);
                 canBeEaten = false;    
             }

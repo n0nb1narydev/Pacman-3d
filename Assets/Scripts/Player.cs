@@ -26,7 +26,9 @@ public class Player : MonoBehaviour
     private UI_Manager _uiManager;
     [SerializeField]
     private int Yellow = 115;
-    
+    public bool eatsGhost = false;
+    [SerializeField]
+    private AudioSource _eatGhost;
 
  
 
@@ -122,5 +124,13 @@ public class Player : MonoBehaviour
         transform.position = _initialPos.position;
         transform.rotation = _initialPos.rotation;
         StartCoroutine(WaitToMove());  
+    }
+    public IEnumerator EatsGhost()
+    {
+        eatsGhost = true;
+        _eatGhost.Play();
+        yield return new WaitForSeconds(.5f);
+        eatsGhost = false;bool 
+
     }
 }

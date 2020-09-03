@@ -245,8 +245,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &9788794
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,8 +369,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &12862296
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,8 +417,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!54 &12862299
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -623,8 +617,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &19362874
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,8 +741,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &40599281
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,8 +865,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &46911411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,8 +989,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &49458057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,8 +1236,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &80570209
 GameObject:
   m_ObjectHideFlags: 0
@@ -1640,8 +1624,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &104229499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1873,8 +1855,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &114140621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1999,8 +1979,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &116040942
 GameObject:
   m_ObjectHideFlags: 0
@@ -2125,8 +2103,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &122060048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2206,8 +2182,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 671356227}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &125002655
 GameObject:
   m_ObjectHideFlags: 0
@@ -2332,8 +2306,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &136308206
 GameObject:
   m_ObjectHideFlags: 0
@@ -2551,8 +2523,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &170502441
 GameObject:
   m_ObjectHideFlags: 0
@@ -2770,8 +2740,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 439259732}
-  _background: {fileID: 893701002}
 --- !u!1 &184873194
 GameObject:
   m_ObjectHideFlags: 0
@@ -2896,8 +2864,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &196529392
 GameObject:
   m_ObjectHideFlags: 0
@@ -3129,8 +3095,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &201235467
 GameObject:
   m_ObjectHideFlags: 0
@@ -3422,8 +3386,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &247870673
 GameObject:
   m_ObjectHideFlags: 0
@@ -3548,8 +3510,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &260967306
 GameObject:
   m_ObjectHideFlags: 0
@@ -3674,8 +3634,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &271106310
 GameObject:
   m_ObjectHideFlags: 0
@@ -3986,8 +3944,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &312760447
 GameObject:
   m_ObjectHideFlags: 0
@@ -4393,8 +4349,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!54 &337652455
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4595,8 +4549,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &350468635
 GameObject:
   m_ObjectHideFlags: 0
@@ -4829,8 +4781,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &372381532
 GameObject:
   m_ObjectHideFlags: 0
@@ -4955,8 +4905,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &374273427
 GameObject:
   m_ObjectHideFlags: 0
@@ -5081,8 +5029,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &381030399
 GameObject:
   m_ObjectHideFlags: 0
@@ -5493,8 +5439,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &458374711
 GameObject:
   m_ObjectHideFlags: 0
@@ -5574,8 +5518,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 671356227}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &462685138
 GameObject:
   m_ObjectHideFlags: 0
@@ -5700,8 +5642,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &468623514
 GameObject:
   m_ObjectHideFlags: 0
@@ -5843,8 +5783,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!54 &471474366
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6045,8 +5983,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &488647981
 GameObject:
   m_ObjectHideFlags: 0
@@ -6171,8 +6107,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &525595257
 GameObject:
   m_ObjectHideFlags: 0
@@ -6390,8 +6324,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &554263035
 GameObject:
   m_ObjectHideFlags: 0
@@ -6609,8 +6541,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &564423524
 GameObject:
   m_ObjectHideFlags: 0
@@ -6735,8 +6665,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &568442171
 GameObject:
   m_ObjectHideFlags: 0
@@ -7076,8 +7004,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &589160645
 GameObject:
   m_ObjectHideFlags: 0
@@ -7701,8 +7627,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &643359452
 GameObject:
   m_ObjectHideFlags: 0
@@ -8277,8 +8201,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &702134495
 GameObject:
   m_ObjectHideFlags: 0
@@ -8403,8 +8325,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &706707393
 GameObject:
   m_ObjectHideFlags: 0
@@ -8529,8 +8449,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &722056562
 GameObject:
   m_ObjectHideFlags: 0
@@ -9061,8 +8979,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &743518064
 GameObject:
   m_ObjectHideFlags: 0
@@ -9300,8 +9216,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &754603406
 GameObject:
   m_ObjectHideFlags: 0
@@ -9524,8 +9438,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 671356227}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &812610961
 GameObject:
   m_ObjectHideFlags: 0
@@ -9650,8 +9562,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &814446518
 GameObject:
   m_ObjectHideFlags: 0
@@ -9776,8 +9686,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &839916062
 GameObject:
   m_ObjectHideFlags: 0
@@ -9985,8 +9893,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &866258124
 GameObject:
   m_ObjectHideFlags: 0
@@ -10111,8 +10017,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &871828436
 GameObject:
   m_ObjectHideFlags: 0
@@ -10330,8 +10234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &893239745
 GameObject:
   m_ObjectHideFlags: 0
@@ -10456,8 +10358,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &893701000
 GameObject:
   m_ObjectHideFlags: 0
@@ -11142,8 +11042,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &988640223
 GameObject:
   m_ObjectHideFlags: 0
@@ -11468,8 +11366,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1032413274
 GameObject:
   m_ObjectHideFlags: 0
@@ -11594,8 +11490,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1037617805
 GameObject:
   m_ObjectHideFlags: 0
@@ -11813,8 +11707,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1054695215
 GameObject:
   m_ObjectHideFlags: 0
@@ -11939,8 +11831,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1061856428
 GameObject:
   m_ObjectHideFlags: 0
@@ -12173,8 +12063,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1078989853
 GameObject:
   m_ObjectHideFlags: 0
@@ -12299,8 +12187,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1085997737
 GameObject:
   m_ObjectHideFlags: 0
@@ -12768,8 +12654,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1169524940
 GameObject:
   m_ObjectHideFlags: 0
@@ -12987,8 +12871,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1181707714
 GameObject:
   m_ObjectHideFlags: 0
@@ -13113,8 +12995,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1183404765
 GameObject:
   m_ObjectHideFlags: 0
@@ -13332,8 +13212,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1198034937
 GameObject:
   m_ObjectHideFlags: 0
@@ -13566,8 +13444,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1202657024
 GameObject:
   m_ObjectHideFlags: 0
@@ -13692,8 +13568,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1207237181
 GameObject:
   m_ObjectHideFlags: 0
@@ -14102,8 +13976,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1252901549
 GameObject:
   m_ObjectHideFlags: 0
@@ -14271,8 +14143,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1255350788
 GameObject:
   m_ObjectHideFlags: 0
@@ -14397,8 +14267,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1268341567
 GameObject:
   m_ObjectHideFlags: 0
@@ -14523,8 +14391,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1313200579
 GameObject:
   m_ObjectHideFlags: 0
@@ -14649,8 +14515,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1341678683
 GameObject:
   m_ObjectHideFlags: 0
@@ -14775,8 +14639,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1344925735
 GameObject:
   m_ObjectHideFlags: 0
@@ -14901,8 +14763,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1360612585
 GameObject:
   m_ObjectHideFlags: 0
@@ -15119,8 +14979,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1370139319
 GameObject:
   m_ObjectHideFlags: 0
@@ -15421,8 +15279,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1385146408
 GameObject:
   m_ObjectHideFlags: 0
@@ -15841,8 +15697,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1394375426
 GameObject:
   m_ObjectHideFlags: 0
@@ -15967,8 +15821,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1394800351
 GameObject:
   m_ObjectHideFlags: 0
@@ -16171,8 +16023,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1408437876
 GameObject:
   m_ObjectHideFlags: 0
@@ -16297,8 +16147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1427224858
 GameObject:
   m_ObjectHideFlags: 0
@@ -16423,8 +16271,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1434717490
 GameObject:
   m_ObjectHideFlags: 0
@@ -16549,8 +16395,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1445209096
 GameObject:
   m_ObjectHideFlags: 0
@@ -16705,8 +16549,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1460422159
 GameObject:
   m_ObjectHideFlags: 0
@@ -16831,8 +16673,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1462059095
 GameObject:
   m_ObjectHideFlags: 0
@@ -16957,8 +16797,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1468684251
 GameObject:
   m_ObjectHideFlags: 0
@@ -17007,8 +16845,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!54 &1468684254
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17302,8 +17138,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1505932841
 GameObject:
   m_ObjectHideFlags: 0
@@ -17428,8 +17262,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1509696510
 GameObject:
   m_ObjectHideFlags: 0
@@ -17647,8 +17479,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1520179646
 GameObject:
   m_ObjectHideFlags: 0
@@ -17768,6 +17598,8 @@ MonoBehaviour:
   _initialPos: {fileID: 1085997738}
   canEatGhosts: 0
   Yellow: 115
+  eatsGhost: 0
+  _eatGhost: {fileID: 1867569840}
 --- !u!143 &1520179652
 CharacterController:
   m_ObjectHideFlags: 0
@@ -17819,6 +17651,8 @@ MonoBehaviour:
   _initialPos: {fileID: 1085997738}
   canEatGhosts: 0
   Yellow: 115
+  eatsGhost: 0
+  _eatGhost: {fileID: 0}
 --- !u!1 &1546296678
 GameObject:
   m_ObjectHideFlags: 0
@@ -17943,8 +17777,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1547962769
 GameObject:
   m_ObjectHideFlags: 0
@@ -18069,8 +17901,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1553630167
 GameObject:
   m_ObjectHideFlags: 0
@@ -18119,8 +17949,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!54 &1553630170
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18428,8 +18256,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1617084720
 GameObject:
   m_ObjectHideFlags: 0
@@ -18554,8 +18380,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1617610316
 GameObject:
   m_ObjectHideFlags: 0
@@ -18680,8 +18504,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1622644908
 GameObject:
   m_ObjectHideFlags: 0
@@ -18806,8 +18628,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1636540096
 GameObject:
   m_ObjectHideFlags: 0
@@ -19132,8 +18952,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1677209208
 GameObject:
   m_ObjectHideFlags: 0
@@ -19351,8 +19169,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1692218039
 GameObject:
   m_ObjectHideFlags: 0
@@ -19477,8 +19293,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1693911648
 GameObject:
   m_ObjectHideFlags: 0
@@ -19603,8 +19417,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1694862335
 GameObject:
   m_ObjectHideFlags: 0
@@ -20008,8 +19820,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1726314797
 GameObject:
   m_ObjectHideFlags: 0
@@ -20134,8 +19944,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1729720409
 GameObject:
   m_ObjectHideFlags: 0
@@ -20260,8 +20068,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1759262753
 GameObject:
   m_ObjectHideFlags: 0
@@ -20386,8 +20192,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1790006565
 GameObject:
   m_ObjectHideFlags: 0
@@ -20512,8 +20316,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1806029052
 GameObject:
   m_ObjectHideFlags: 0
@@ -20638,8 +20440,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1815244678
 GameObject:
   m_ObjectHideFlags: 0
@@ -20857,8 +20657,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1824283887
 GameObject:
   m_ObjectHideFlags: 0
@@ -21091,8 +20889,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1861328868
 GameObject:
   m_ObjectHideFlags: 0
@@ -21235,7 +21031,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 256
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -21361,8 +21157,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!54 &1889141734
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21563,8 +21357,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1894116931
 GameObject:
   m_ObjectHideFlags: 0
@@ -21689,8 +21481,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1898100369
 GameObject:
   m_ObjectHideFlags: 0
@@ -21815,8 +21605,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1898599003
 GameObject:
   m_ObjectHideFlags: 0
@@ -22064,8 +21852,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1920717460
 GameObject:
   m_ObjectHideFlags: 0
@@ -22190,8 +21976,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1950818053
 GameObject:
   m_ObjectHideFlags: 0
@@ -22610,8 +22394,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1970939788
 GameObject:
   m_ObjectHideFlags: 0
@@ -22736,8 +22518,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1976232093
 GameObject:
   m_ObjectHideFlags: 0
@@ -22862,8 +22642,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1977129463
 GameObject:
   m_ObjectHideFlags: 0
@@ -22988,8 +22766,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &1984721745
 GameObject:
   m_ObjectHideFlags: 0
@@ -23207,8 +22983,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 439259732}
-  _background: {fileID: 893701002}
 --- !u!1 &2005237697
 GameObject:
   m_ObjectHideFlags: 0
@@ -23333,8 +23107,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &2030931111
 GameObject:
   m_ObjectHideFlags: 0
@@ -23459,8 +23231,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &2039916783
 GameObject:
   m_ObjectHideFlags: 0
@@ -23540,8 +23310,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 671356227}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &2049936779
 GameObject:
   m_ObjectHideFlags: 0
@@ -23666,8 +23434,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 439259732}
-  _background: {fileID: 893701002}
 --- !u!1 &2054756549
 GameObject:
   m_ObjectHideFlags: 0
@@ -23792,8 +23558,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 439259732}
-  _background: {fileID: 893701002}
 --- !u!1 &2070181682
 GameObject:
   m_ObjectHideFlags: 0
@@ -23918,8 +23682,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &2076371776
 GameObject:
   m_ObjectHideFlags: 0
@@ -24230,8 +23992,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1 &2137564412
 GameObject:
   m_ObjectHideFlags: 0
@@ -24449,8 +24209,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cherry: {fileID: 0}
-  _chase: {fileID: 0}
-  _background: {fileID: 893701002}
 --- !u!1001 &5838118508911589740
 PrefabInstance:
   m_ObjectHideFlags: 0

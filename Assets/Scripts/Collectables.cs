@@ -11,7 +11,7 @@ public class Collectables : MonoBehaviour
     private Pinky _pinky;
     private Inky _inky;
     private Clyde _clyde;
-    public AudioSource _chase;
+    // public AudioSource _chase;
     // public AudioSource _background;
     
     
@@ -45,7 +45,7 @@ public class Collectables : MonoBehaviour
             }
             else if (this.tag == "White")
             {
-                _chase.Play();
+                // _chase.Play();
                 uiManager.currentScore += 50;
                 uiManager.UpdateScore(uiManager.currentScore);
                 Destroy(this.gameObject);
