@@ -69,10 +69,5 @@ public class Collectables : MonoBehaviour
         _pinky.canBeEaten = false;
         player.canEatGhosts = false;
     }
-    // IEnumerator RestartMusic()
-    // {
-    //     _background.Stop();
-    //     yield return new WaitForSeconds(10f);
-    //     _background.Play();
-    // }
+
 }

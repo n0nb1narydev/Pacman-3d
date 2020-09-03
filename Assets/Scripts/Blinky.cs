@@ -57,13 +57,13 @@ public class Blinky : MonoBehaviour
         {
             if(other.tag == "Player" && canBeEaten == true && player.canEatGhosts == true)
             {
+                _scaredGhost.SetActive(false);
+                canBeEaten = false; 
+                uiManager.currentScore += 200;  
+                uiManager.UpdateScore(uiManager.currentScore);  
+                StartCoroutine(player.EatsGhost()); 
                 transform.position = _start.transform.position;
                 StartCoroutine(WaitToMove(2f));
-                uiManager.currentScore += 200;  
-                uiManager.UpdateScore(uiManager.currentScore);
-                StartCoroutine(player.EatsGhost());
-                _scaredGhost.SetActive(false);
-                canBeEaten = false;    
             }
             else if(other.tag == "Player" && canBeEaten == false)
             {

@@ -8,6 +8,8 @@ public class UI_Manager : MonoBehaviour
     [SerializeField]
     private Text _readyText;
     [SerializeField]
+    private Text _winnerText;    
+    [SerializeField]
     private Text _scoreText;
     [SerializeField]
     public int currentScore;
@@ -21,6 +23,8 @@ public class UI_Manager : MonoBehaviour
     private Text _restartText;
     private GameManager _gameManager;
     private Player _player;
+    [SerializeField]
+    private Text _yellowText;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +37,16 @@ public class UI_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
+    }
+    public void UpdateYellowCount(int yellowCount)
+    {
+        _yellowText.text = "Pellets: " + yellowCount;
+
+        if (yellowCount == 0)
+        {
+            GameOverWinner();
+        }     
     }
     public void UpdateLives(int currentLives)
     {
@@ -53,6 +66,15 @@ public class UI_Manager : MonoBehaviour
         Destroy(_player.gameObject, 1f);
         StartCoroutine(FlashingGameOverText());
 
+    }
+
+    void GameOverWinner()
+    {
+        _gameManager.GameOver();
+        _winnerText.gameObject.SetActive(true);
+        _restartText.gameObject.SetActive(true);
+        Destroy(_player.gameObject, 1f);
+        StartCoroutine(FlashingGameOverText());
     }
     IEnumerator ReadyTextOff()
     {

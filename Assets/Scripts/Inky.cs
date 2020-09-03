@@ -57,13 +57,13 @@ public class Inky : MonoBehaviour
         {
             if(other.tag == "Player" && canBeEaten == true && player.canEatGhosts == true)
             {
-                transform.position = _start.transform.position;
-                StartCoroutine(WaitToMove(2f));
+                _scaredGhost.SetActive(false);
+                canBeEaten = false;  
                 uiManager.currentScore += 200;  
                 uiManager.UpdateScore(uiManager.currentScore);
-                StartCoroutine(player.EatsGhost());
-                _scaredGhost.SetActive(false);
-                canBeEaten = false;    
+                StartCoroutine(player.EatsGhost()); 
+                transform.position = _start.transform.position;
+                StartCoroutine(WaitToMove(2f));
             }
             else if(other.tag == "Player" && canBeEaten == false)
             {

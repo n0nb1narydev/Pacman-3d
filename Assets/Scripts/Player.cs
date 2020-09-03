@@ -24,11 +24,17 @@ public class Player : MonoBehaviour
     private Transform  _initialPos;
     public bool canEatGhosts = false;
     private UI_Manager _uiManager;
-    [SerializeField]
-    private int Yellow = 115;
+    public int yellowCount = 115;
+
     public bool eatsGhost = false;
     [SerializeField]
     private AudioSource _eatGhost;
+    [SerializeField]
+    private AudioSource _victory;
+    [SerializeField]
+    private AudioSource _bg;
+    [SerializeField]
+    private AudioSource _chase;
 
  
 
@@ -71,17 +77,21 @@ public class Player : MonoBehaviour
         {
             transform.position = new Vector3( 20f, transform.position.y, 0);
         }
+
+        if(yellowCount == 0)
+        {
+            _bg.Stop();
+            _victory.Play();
+        }
+       
     }
    
     private void OnTriggerEnter(Collider other) 
     {
         if(other.tag == "Yellow")
         {
-            Yellow --;
-            if(Yellow == 0)
-            {
-                //YouWin
-            }
+            yellowCount --;
+            _uiManager.UpdateYellowCount(yellowCount);
         }    
     }
 
@@ -130,7 +140,7 @@ public class Player : MonoBehaviour
         eatsGhost = true;
         _eatGhost.Play();
         yield return new WaitForSeconds(.5f);
-        eatsGhost = false;bool 
-
+        eatsGhost = false;
     }
+
 }
