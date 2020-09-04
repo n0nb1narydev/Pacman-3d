@@ -8,7 +8,7 @@ public class Inky : MonoBehaviour
     private Player player;
     private NavMeshAgent _nma;
   
-    public GameObject _start;
+    public Transform _start;
    
     [SerializeField]
     private GameObject _scaredGhost;
@@ -16,17 +16,16 @@ public class Inky : MonoBehaviour
     private AudioSource _eatGhost;
     private UI_Manager uiManager;
     public bool canBeEaten = false;
- 
+    
     void Start()
     {
-        _nma = this.GetComponent<NavMeshAgent>();
-        StartCoroutine(WaitToMove(4.1f));
+         StartCoroutine(WaitToMove());
         player = GameObject.Find("Player").GetComponent<Player>();
         uiManager = GameObject.Find("UI_Manager").GetComponent<UI_Manager>();
-        // _nma = this.GetComponent<NavMeshAgent>();    
+        _nma = this.GetComponent<NavMeshAgent>();      
     }
 
-    
+
     void Update()
     {
         if(canBeEaten == false)
@@ -38,45 +37,28 @@ public class Inky : MonoBehaviour
         {
             StartCoroutine(RunAway());
         }
-        //allows ghosts to enter door and appear on other side
-        if (transform.position.x >= 19f)
-        {
-            transform.position = new Vector3(-19f,transform.position.y, 0);
-        } 
-        else if ( transform.position.x <= -19f )
-        {
-            transform.position = new Vector3( 19f, transform.position.y, 0);
-        }
-        if(player.isHit == true)
-        {
-            transform.position = _start.transform.position;
-            StartCoroutine(WaitToMove(4.1f));    
-        } 
     }
     void OnTriggerEnter(Collider other) 
+    {
+        if(other.tag == "Player" && canBeEaten == true)
         {
-            if(other.tag == "Player" && canBeEaten == true) // && player.canEatGhosts == true
-            {
-                StartCoroutine(player.EatsGhost()); 
-                transform.position = _start.transform.position;
-                uiManager.currentScore += 200;  
-                uiManager.UpdateScore(uiManager.currentScore);
-                _scaredGhost.SetActive(false);
-                StartCoroutine(WaitToMove(2f));
-                canBeEaten = false;    
-            }
-            else if(other.tag == "Player" && canBeEaten == false)
-            {
-                StartCoroutine(player.HitPlayer());
-            }
-           
-        } 
+            transform.position = _start.transform.position;
+            _eatGhost.Play();
+            _scaredGhost.SetActive(false);
+            canBeEaten = false;    
+        }
+        else if(other.tag == "Player" && canBeEaten == false)
+        {
+            player.isDead = true;
+            uiManager.UpdateLives(player.lives);
+        }   
+    }
 
-    IEnumerator WaitToMove(float time)
+    IEnumerator WaitToMove()
     {
         _nma.enabled = false;
-        yield return new WaitForSeconds(time);
-        _nma.enabled = true;        
+        yield return new WaitForSeconds(4.1f);
+        _nma.enabled = true; 
     }
     IEnumerator RunAway()
     {

@@ -27,7 +27,6 @@ public class Collectables : MonoBehaviour
         _pinky = GameObject.Find("Pinky").GetComponent<Pinky>();
         _inky = GameObject.Find("Inky").GetComponent<Inky>();
         _clyde = GameObject.Find("Clyde").GetComponent<Clyde>();
-        // _background.Play();
     }
     private void OnTriggerEnter(Collider other) 
     {
@@ -50,18 +49,12 @@ public class Collectables : MonoBehaviour
             }
             else if (this.tag == "White")
             {
-                // _chase.Play();
-                StartCoroutine(PlayerCanEatGhosts());
                 uiManager.currentScore += 50;
                 uiManager.UpdateScore(uiManager.currentScore);
                 Destroy(this.gameObject);
-                // StartCoroutine(RestartMusic());
-                
+                StartCoroutine(PlayerCanEatGhosts());
+
             }
-            // else if(this.tag == "Cherry")
-            // {
-            //     _cherry.cherryActive = false;
-            // }
         }   
     }
 

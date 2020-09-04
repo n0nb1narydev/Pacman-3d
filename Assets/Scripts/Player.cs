@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
   
     [SerializeField]
     private AudioSource _dead;
-    public bool isHit = false;
+    public bool isDead = false;
     [SerializeField]
     private Transform  _initialPos;
     public bool canEatGhosts = false;
@@ -35,6 +35,7 @@ public class Player : MonoBehaviour
     private AudioSource _bg;
     [SerializeField]
     private AudioSource _chase;
+   
 
  
 
@@ -42,12 +43,9 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        _controller = GetComponent<CharacterController>(); 
         StartCoroutine(WaitToMove());
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        transform.position = _initialPos.position;
-        _uiManager = GameObject.Find("Canvas").GetComponent<UI_Manager>(); 
     }
 
     void Update()
@@ -69,7 +67,7 @@ public class Player : MonoBehaviour
 
         MovePlayer();  
 
-        if (transform.position.x >= 21f)
+     if (transform.position.x >= 21f)
         {
             transform.position = new Vector3(-17f,transform.position.y, 0);
         } 
@@ -93,7 +91,14 @@ public class Player : MonoBehaviour
             yellowCount --;
             _uiManager.UpdateYellowCount(yellowCount);
         }    
+        if(isDead == true)
+        {
+            DamagePlayer();
+        }
+    
     }
+   
+   
 
     private void MovePlayer() 
     {
@@ -112,35 +117,18 @@ public class Player : MonoBehaviour
     }
     IEnumerator WaitToMove()
     {
-        _controller.enabled = false;
         yield return new WaitForSeconds(4.1f);
-        _controller.enabled = true;  
+        _controller = GetComponent<CharacterController>(); 
         _isMoving = true;
           
     }
-    public IEnumerator HitPlayer()
+    public void DamagePlayer()
     {
-        isHit = true;
-        Restart();
-        lives -= 1;
+        lives --;
         _dead.Play();
-        _uiManager.UpdateLives(lives);
-        yield return new WaitForSeconds(1f);
-        isHit = false; 
-    }
-    private void Restart()
-    {
-        _controller.enabled = false;
-        transform.position = _initialPos.position;
-        transform.rotation = _initialPos.rotation;
-        StartCoroutine(WaitToMove());  
-    }
-    public IEnumerator EatsGhost()
-    {
-        eatsGhost = true;
-        _eatGhost.Play();
-        yield return new WaitForSeconds(.5f);
-        eatsGhost = false;
+        isDead = false;
+        Start();
+        // transform.position = _initialPos.transform.position;
     }
 
 }

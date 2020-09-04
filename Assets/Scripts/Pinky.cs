@@ -16,14 +16,13 @@ public class Pinky : MonoBehaviour
     private AudioSource _eatGhost;
     private UI_Manager uiManager;
     public bool canBeEaten = false;
- 
+    // Start is called before the first frame update
     void Start()
     {
-        _nma = this.GetComponent<NavMeshAgent>();
          StartCoroutine(WaitToMove(4.1f));
         player = GameObject.Find("Player").GetComponent<Player>();
         uiManager = GameObject.Find("UI_Manager").GetComponent<UI_Manager>();
-        transform.position = _start.transform.position;
+        _nma = this.GetComponent<NavMeshAgent>();    
     }
 
     
@@ -38,7 +37,7 @@ public class Pinky : MonoBehaviour
         {
             StartCoroutine(RunAway());
         }
-        
+        //allows ghosts to enter door and appear on other side
         if (transform.position.x >= 19f)
         {
             transform.position = new Vector3(-19f,transform.position.y, 0);
@@ -48,41 +47,33 @@ public class Pinky : MonoBehaviour
             transform.position = new Vector3( 19f, transform.position.y, 0);
         }
 
-        if(player.isHit == true)
+        if(player.isDead == true)
         {
-            transform.position = _start.transform.position;
-            StartCoroutine(WaitToMove(4.1f));    
-        }
+            transform.position = new Vector3(-0.115f, 2.28f, 0.7900001f);
+        }   
     }
     void OnTriggerEnter(Collider other) 
     {
         if(other.tag == "Player" && canBeEaten == true) // && player.canEatGhosts == true
         {
-
-            StartCoroutine(player.EatsGhost()); 
+         
             transform.position = _start.transform.position;
-            uiManager.currentScore += 200;  
-            uiManager.UpdateScore(uiManager.currentScore);
-            canBeEaten = false; 
+            _eatGhost.Play();
             _scaredGhost.SetActive(false);
-            StartCoroutine(WaitToMove(2f));
-            
-            
-                 
+            canBeEaten = false;    
         }
         else if(other.tag == "Player" && canBeEaten == false)
         {
-            StartCoroutine(player.HitPlayer());
-    
-        }
-           
+            player.isDead = true;
+            uiManager.UpdateLives(player.lives);
+            player.DamagePlayer();
+        }  
     } 
 
-    IEnumerator WaitToMove(float time)
+    IEnumerator WaitToMove(count)
     {
-        _nma.enabled = false;
-        yield return new WaitForSeconds(time);
-        _nma.enabled = true;        
+        yield return new WaitForSeconds(count);
+        _nma = this.GetComponent<NavMeshAgent>();       
     }
     IEnumerator RunAway()
     {
