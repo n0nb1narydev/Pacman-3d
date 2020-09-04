@@ -55,16 +55,19 @@ public class Pinky : MonoBehaviour
         }
     }
     void OnTriggerEnter(Collider other) 
+    {
+        if(other.tag == "Player" && canBeEaten == true) // && player.canEatGhosts == true
         {
-        if(other.tag == "Player" && canBeEaten == true && player.canEatGhosts == true)
-        {
-            uiManager.currentScore += 200;  
-            uiManager.UpdateScore(uiManager.currentScore);
+
             StartCoroutine(player.EatsGhost()); 
             transform.position = _start.transform.position;
+            uiManager.currentScore += 200;  
+            uiManager.UpdateScore(uiManager.currentScore);
             canBeEaten = false; 
             _scaredGhost.SetActive(false);
             StartCoroutine(WaitToMove(2f));
+            
+            
                  
         }
         else if(other.tag == "Player" && canBeEaten == false)
@@ -88,8 +91,8 @@ public class Pinky : MonoBehaviour
         yield return new WaitForSeconds(8f);
         StartCoroutine(FlashWarning());
         yield return new WaitForSeconds(10f);
-        _scaredGhost.SetActive(false);
         canBeEaten = false;
+        _scaredGhost.SetActive(false);
     }
     IEnumerator FlashWarning()
     {

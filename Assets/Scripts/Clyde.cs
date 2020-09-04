@@ -55,15 +55,15 @@ public class Clyde : MonoBehaviour
     }
     void OnTriggerEnter(Collider other) 
         {
-            if(other.tag == "Player" && canBeEaten == true )
-            { 
-                uiManager.currentScore += 200;  
-                uiManager.UpdateScore(uiManager.currentScore);
+            if(other.tag == "Player" && canBeEaten == true) // && player.canEatGhosts == true
+            {
                 StartCoroutine(player.EatsGhost()); 
                 transform.position = _start.transform.position;
-                canBeEaten = false; 
+                uiManager.currentScore += 200;  
+                uiManager.UpdateScore(uiManager.currentScore);
                 _scaredGhost.SetActive(false);
                 StartCoroutine(WaitToMove(2f));
+                canBeEaten = false;    
             }
             else if(other.tag == "Player" && canBeEaten == false)
             {

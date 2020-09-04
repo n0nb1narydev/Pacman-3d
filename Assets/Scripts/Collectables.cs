@@ -10,7 +10,8 @@ public class Collectables : MonoBehaviour
     private Pinky _pinky;
     private Inky _inky;
     private Clyde _clyde;
-    private Cherry_Behavior _cherry;
+    public AudioSource _cherry;
+    // private Cherry_Behavior _cherry;
 
     // public AudioSource _chase;
     // public AudioSource _background;
@@ -19,7 +20,7 @@ public class Collectables : MonoBehaviour
 
     private void Start() 
     {
-        _cherry = GameObject.Find("Cherry").GetComponent<Cherry_Behavior>();
+        // _cherry = GameObject.Find("Cherry").GetComponent<Cherry_Behavior>();
         uiManager = GameObject.Find("Canvas").GetComponent<UI_Manager>();
         player = GameObject.Find("Player").GetComponent<Player>();
         _blinky = GameObject.Find("Blinky").GetComponent<Blinky>();
@@ -32,15 +33,15 @@ public class Collectables : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            // if(this.tag == "Cherry")
-            // {
-            //     _cherry.Play();
-            //     _cherryBehavior.cherryActive = false;
-            //     uiManager.currentScore += 100;
-            //     uiManager.UpdateScore(uiManager.currentScore);
-            //     Destroy(this.gameObject);
-            // }
-            // else 
+            if(this.tag == "Cherry")
+            {
+                // _cherry.Play();
+                // _cherryBehavior.cherryActive = false;
+                uiManager.currentScore += 100;
+                uiManager.UpdateScore(uiManager.currentScore);
+                Destroy(this.gameObject);
+            }
+            else 
             if (this.tag == "Yellow")
             {
                 uiManager.currentScore += 10;
@@ -57,10 +58,10 @@ public class Collectables : MonoBehaviour
                 // StartCoroutine(RestartMusic());
                 
             }
-            else if(this.tag == "Cherry")
-            {
-                _cherry.cherryActive = false;
-            }
+            // else if(this.tag == "Cherry")
+            // {
+            //     _cherry.cherryActive = false;
+            // }
         }   
     }
 
