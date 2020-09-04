@@ -56,13 +56,13 @@ public class Inky : MonoBehaviour
     void OnTriggerEnter(Collider other) 
         {
             if(other.tag == "Player" && canBeEaten == true && player.canEatGhosts == true)
-            {
-                _scaredGhost.SetActive(false);
-                canBeEaten = false;  
-                uiManager.currentScore += 200;  
+            { 
+                uiManager.currentScore += 200; 
                 uiManager.UpdateScore(uiManager.currentScore);
                 StartCoroutine(player.EatsGhost()); 
                 transform.position = _start.transform.position;
+                canBeEaten = false;  
+                _scaredGhost.SetActive(false);
                 StartCoroutine(WaitToMove(2f));
             }
             else if(other.tag == "Player" && canBeEaten == false)

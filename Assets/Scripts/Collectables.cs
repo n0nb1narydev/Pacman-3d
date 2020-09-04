@@ -6,11 +6,12 @@ public class Collectables : MonoBehaviour
 {
     private UI_Manager uiManager;
     private Player player;
-    public AudioSource _cherry;
     private Blinky _blinky;
     private Pinky _pinky;
     private Inky _inky;
     private Clyde _clyde;
+    private Cherry_Behavior _cherry;
+
     // public AudioSource _chase;
     // public AudioSource _background;
     
@@ -18,6 +19,7 @@ public class Collectables : MonoBehaviour
 
     private void Start() 
     {
+        _cherry = GameObject.Find("Cherry").GetComponent<Cherry_Behavior>();
         uiManager = GameObject.Find("Canvas").GetComponent<UI_Manager>();
         player = GameObject.Find("Player").GetComponent<Player>();
         _blinky = GameObject.Find("Blinky").GetComponent<Blinky>();
@@ -30,14 +32,16 @@ public class Collectables : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            if(this.tag == "Cherry")
-            {
-                _cherry.Play();
-                uiManager.currentScore += 100;
-                uiManager.UpdateScore(uiManager.currentScore);
-                Destroy(this.gameObject);
-            }
-            else if (this.tag == "Yellow")
+            // if(this.tag == "Cherry")
+            // {
+            //     _cherry.Play();
+            //     _cherryBehavior.cherryActive = false;
+            //     uiManager.currentScore += 100;
+            //     uiManager.UpdateScore(uiManager.currentScore);
+            //     Destroy(this.gameObject);
+            // }
+            // else 
+            if (this.tag == "Yellow")
             {
                 uiManager.currentScore += 10;
                 uiManager.UpdateScore(uiManager.currentScore);
@@ -46,11 +50,16 @@ public class Collectables : MonoBehaviour
             else if (this.tag == "White")
             {
                 // _chase.Play();
+                StartCoroutine(PlayerCanEatGhosts());
                 uiManager.currentScore += 50;
                 uiManager.UpdateScore(uiManager.currentScore);
                 Destroy(this.gameObject);
                 // StartCoroutine(RestartMusic());
-                StartCoroutine(PlayerCanEatGhosts());
+                
+            }
+            else if(this.tag == "Cherry")
+            {
+                _cherry.cherryActive = false;
             }
         }   
     }

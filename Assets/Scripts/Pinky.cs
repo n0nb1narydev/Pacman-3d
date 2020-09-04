@@ -58,12 +58,12 @@ public class Pinky : MonoBehaviour
         {
         if(other.tag == "Player" && canBeEaten == true && player.canEatGhosts == true)
         {
-            _scaredGhost.SetActive(false);
-            canBeEaten = false; 
             uiManager.currentScore += 200;  
             uiManager.UpdateScore(uiManager.currentScore);
             StartCoroutine(player.EatsGhost()); 
             transform.position = _start.transform.position;
+            canBeEaten = false; 
+            _scaredGhost.SetActive(false);
             StartCoroutine(WaitToMove(2f));
                  
         }
