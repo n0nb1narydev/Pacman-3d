@@ -29,8 +29,8 @@ public class Player : MonoBehaviour
     private AudioSource _victory;
     [SerializeField]
     private AudioSource _bg;
-    [SerializeField]
-    private AudioSource _chase;
+    public bool ateGhost= false;
+    
     // public bool isHit = false;
    
 
@@ -67,7 +67,7 @@ public class Player : MonoBehaviour
 
         MovePlayer();  
 
-     if (transform.position.x >= 21f)
+        if (transform.position.x >= 21f)
         {
             transform.position = new Vector3(-17f,transform.position.y, 0);
         } 
@@ -90,12 +90,12 @@ public class Player : MonoBehaviour
         {
             yellowCount --;
             _uiManager.UpdateYellowCount(yellowCount);
-        }    
-        if(isDead == true)
-        {
-            DamagePlayer();
         }
-    
+        if(other.tag == "Ghost" && canEatGhosts == true)  
+        {
+            _uiManager.currentScore += 200;
+            _uiManager.UpdateScore(_uiManager.currentScore);
+        }
     }
    
    

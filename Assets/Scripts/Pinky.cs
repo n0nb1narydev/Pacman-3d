@@ -14,6 +14,8 @@ public class Pinky : MonoBehaviour
     private GameObject _scaredGhost;
     private UI_Manager uiManager;
     public bool canBeEaten = false;
+    [SerializeField]
+    private AudioSource _eatGhost;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,8 +31,7 @@ public class Pinky : MonoBehaviour
         if(canBeEaten == false)
         {
             _nma.SetDestination(player.transform.position);
-            _scaredGhost.SetActive(false);
-           
+            _scaredGhost.SetActive(false); 
         } 
         else if (canBeEaten == true)
         {
@@ -54,11 +55,10 @@ public class Pinky : MonoBehaviour
     {
         if(other.tag == "Player" && canBeEaten == true && player.canEatGhosts == true) // 
         {
-            canBeEaten = false;   
+            _eatGhost.Play();  
             Respawn(2f);
-            uiManager.currentScore += 200;  
-            uiManager.UpdateScore(uiManager.currentScore);
-            canBeEaten = false;    
+            canBeEaten = false;  
+  
         }
         else if(other.tag == "Player" && canBeEaten == false)
         {
@@ -97,5 +97,6 @@ public class Pinky : MonoBehaviour
     {
         transform.position = _start.transform.position;
         StartCoroutine(WaitToMove(count));
+        player.ateGhost = false;
     }
 }

@@ -34,7 +34,7 @@ public class Collectables : MonoBehaviour
         {
             if(this.tag == "Cherry")
             {
-                // _cherry.Play();
+                _cherry.Play();
                 // _cherryBehavior.cherryActive = false;
                 uiManager.currentScore += 100;
                 uiManager.UpdateScore(uiManager.currentScore);
