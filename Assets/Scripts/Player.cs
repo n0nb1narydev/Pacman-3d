@@ -25,16 +25,13 @@ public class Player : MonoBehaviour
     public bool canEatGhosts = false;
     private UI_Manager _uiManager;
     public int yellowCount = 115;
-
-    public bool eatsGhost = false;
-    [SerializeField]
-    private AudioSource _eatGhost;
     [SerializeField]
     private AudioSource _victory;
     [SerializeField]
     private AudioSource _bg;
     [SerializeField]
     private AudioSource _chase;
+    // public bool isHit = false;
    
 
  
@@ -43,9 +40,12 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        transform.position = _initialPos.position;
+        _controller = GetComponent<CharacterController>(); 
         StartCoroutine(WaitToMove());
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        _uiManager = GameObject.Find("Canvas").GetComponent<UI_Manager>(); 
     }
 
     void Update()
@@ -102,7 +102,7 @@ public class Player : MonoBehaviour
 
     private void MovePlayer() 
     {
-         float horizontalInput = Input.GetAxis("Horizontal");
+        float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical"); 
 
 
@@ -117,8 +117,10 @@ public class Player : MonoBehaviour
     }
     IEnumerator WaitToMove()
     {
+        _isMoving = false;
+        _controller.enabled = false;
         yield return new WaitForSeconds(4.1f);
-        _controller = GetComponent<CharacterController>(); 
+        _controller.enabled = true;
         _isMoving = true;
           
     }
@@ -129,6 +131,22 @@ public class Player : MonoBehaviour
         isDead = false;
         Start();
         // transform.position = _initialPos.transform.position;
+    }
+    public IEnumerator HitPlayer()
+    {
+        isDead = true;
+        lives --;
+        _uiManager.UpdateLives(lives);
+        Respawn();
+        _dead.Play();
+        yield return new WaitForSeconds(1f);
+        isDead = false; 
+    }
+    private void Respawn()
+    {
+        transform.position = _initialPos.position;
+        transform.rotation = _initialPos.rotation;
+        StartCoroutine(WaitToMove());  
     }
 
 }

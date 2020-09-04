@@ -13131,11 +13131,10 @@ MonoBehaviour:
   _initialPos: {fileID: 809908828}
   canEatGhosts: 0
   yellowCount: 115
-  eatsGhost: 0
-  _eatGhost: {fileID: 2009058525}
   _victory: {fileID: 1144780587}
   _bg: {fileID: 530191938}
   _chase: {fileID: 0}
+  isHit: 0
 --- !u!114 &1021519677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13187,11 +13186,10 @@ MonoBehaviour:
   _initialPos: {fileID: 809908828}
   canEatGhosts: 0
   yellowCount: 115
-  eatsGhost: 0
-  _eatGhost: {fileID: 2009058525}
   _victory: {fileID: 1144780587}
   _bg: {fileID: 0}
   _chase: {fileID: 0}
+  isHit: 0
 --- !u!135 &1021519680
 SphereCollider:
   m_ObjectHideFlags: 0

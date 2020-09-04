@@ -12,17 +12,15 @@ public class Pinky : MonoBehaviour
    
     [SerializeField]
     private GameObject _scaredGhost;
-    [SerializeField]
-    private AudioSource _eatGhost;
     private UI_Manager uiManager;
     public bool canBeEaten = false;
     // Start is called before the first frame update
     void Start()
     {
+        _nma = this.GetComponent<NavMeshAgent>();  
          StartCoroutine(WaitToMove(4.1f));
         player = GameObject.Find("Player").GetComponent<Player>();
-        uiManager = GameObject.Find("UI_Manager").GetComponent<UI_Manager>();
-        _nma = this.GetComponent<NavMeshAgent>();    
+        uiManager = GameObject.Find("UI_Manager").GetComponent<UI_Manager>();  
     }
 
     
@@ -31,6 +29,7 @@ public class Pinky : MonoBehaviour
         if(canBeEaten == false)
         {
             _nma.SetDestination(player.transform.position);
+            _scaredGhost.SetActive(false);
            
         } 
         else if (canBeEaten == true)
@@ -46,7 +45,6 @@ public class Pinky : MonoBehaviour
         {
             transform.position = new Vector3( 19f, transform.position.y, 0);
         }
-
         if(player.isDead == true)
         {
             transform.position = new Vector3(-0.115f, 2.28f, 0.7900001f);
@@ -54,26 +52,26 @@ public class Pinky : MonoBehaviour
     }
     void OnTriggerEnter(Collider other) 
     {
-        if(other.tag == "Player" && canBeEaten == true) // && player.canEatGhosts == true
+        if(other.tag == "Player" && canBeEaten == true && player.canEatGhosts == true) // 
         {
-         
-            transform.position = _start.transform.position;
-            _eatGhost.Play();
-            _scaredGhost.SetActive(false);
+            canBeEaten = false;   
+            Respawn(2f);
+            uiManager.currentScore += 200;  
+            uiManager.UpdateScore(uiManager.currentScore);
             canBeEaten = false;    
         }
         else if(other.tag == "Player" && canBeEaten == false)
         {
-            player.isDead = true;
-            uiManager.UpdateLives(player.lives);
-            player.DamagePlayer();
+            StartCoroutine(player.HitPlayer());
+            Respawn(4.1f);
         }  
     } 
 
-    IEnumerator WaitToMove(count)
-    {
+    IEnumerator WaitToMove(float count)
+    {        
+        _nma.enabled = false;
         yield return new WaitForSeconds(count);
-        _nma = this.GetComponent<NavMeshAgent>();       
+        _nma.enabled = true;        
     }
     IEnumerator RunAway()
     {
@@ -94,5 +92,10 @@ public class Pinky : MonoBehaviour
         _scaredGhost.SetActive(false);
         yield return new WaitForSeconds(1f);
         }
+    }
+    private void Respawn(float count)
+    {
+        transform.position = _start.transform.position;
+        StartCoroutine(WaitToMove(count));
     }
 }

@@ -40,8 +40,7 @@ public class Collectables : MonoBehaviour
                 uiManager.UpdateScore(uiManager.currentScore);
                 Destroy(this.gameObject);
             }
-            else 
-            if (this.tag == "Yellow")
+            else if (this.tag == "Yellow")
             {
                 uiManager.currentScore += 10;
                 uiManager.UpdateScore(uiManager.currentScore);
@@ -49,11 +48,11 @@ public class Collectables : MonoBehaviour
             }
             else if (this.tag == "White")
             {
+                StartCoroutine(PlayerCanEatGhosts());
                 uiManager.currentScore += 50;
                 uiManager.UpdateScore(uiManager.currentScore);
-                Destroy(this.gameObject);
-                StartCoroutine(PlayerCanEatGhosts());
-
+                Renderer rend = this.GetComponent<Renderer>();
+                rend.enabled = false;
             }
         }   
     }
@@ -66,11 +65,12 @@ public class Collectables : MonoBehaviour
         _inky.canBeEaten = true;
         _pinky.canBeEaten = true;
         yield return new WaitForSeconds(10f);
+        player.canEatGhosts = false;
         _blinky.canBeEaten = false;
         _clyde.canBeEaten = false;
         _inky.canBeEaten = false;
         _pinky.canBeEaten = false;
-        player.canEatGhosts = false;
+        Destroy(this.gameObject);
     }
 
 }
