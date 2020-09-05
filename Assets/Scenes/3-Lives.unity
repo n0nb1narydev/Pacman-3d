@@ -1941,6 +1941,10 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1646089509, guid: 258aabb2cf1d04f5fa4a0d8099cd760b, type: 3}
+      propertyPath: m_Speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1646089512, guid: 258aabb2cf1d04f5fa4a0d8099cd760b, type: 3}
       propertyPath: m_Size.z
       value: 0.91609
@@ -7121,7 +7125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &480978811
 Transform:
   m_ObjectHideFlags: 0
@@ -8523,7 +8527,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &564993145
 Transform:
   m_ObjectHideFlags: 0
@@ -9080,7 +9084,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &623427999
 Transform:
   m_ObjectHideFlags: 0
@@ -10176,7 +10180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 473ff894a16854a03a48c8ca825c0a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 4
+  _speed: 4.5
   _wakka: {fileID: 1424748831}
   lives: 3
   _dead: {fileID: 144348699}
@@ -10229,8 +10233,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.595694
+  m_Center: {x: 0.010016739, y: 0, z: 0.1876461}
 --- !u!23 &699123352
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15524,7 +15528,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1201293305
 Transform:
   m_ObjectHideFlags: 0
@@ -15957,7 +15961,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1246133237
 Transform:
   m_ObjectHideFlags: 0
@@ -20340,7 +20344,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1590014973
 Transform:
   m_ObjectHideFlags: 0
@@ -21121,7 +21125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1663083237
 Transform:
   m_ObjectHideFlags: 0
@@ -22193,6 +22197,10 @@ PrefabInstance:
     - target: {fileID: 505529134, guid: f5cdaa95522954816acf1c87b35bad77, type: 3}
       propertyPath: m_UseGravity
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 505529135, guid: f5cdaa95522954816acf1c87b35bad77, type: 3}
+      propertyPath: m_Speed
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 505529138, guid: f5cdaa95522954816acf1c87b35bad77, type: 3}
       propertyPath: m_Size.z
@@ -23989,7 +23997,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1972275996
 Transform:
   m_ObjectHideFlags: 0
@@ -25003,6 +25011,10 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 164252405, guid: 0e3805e2d4ebc46ae95e7a5aa2fd986b, type: 3}
+      propertyPath: m_Speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 164252408, guid: 0e3805e2d4ebc46ae95e7a5aa2fd986b, type: 3}
       propertyPath: m_Size.z
       value: 0.88154817
@@ -25452,6 +25464,10 @@ PrefabInstance:
     - target: {fileID: 599814787, guid: fd05a4a68ab074c4f98403b174a49d1a, type: 3}
       propertyPath: m_UseGravity
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 599814788, guid: fd05a4a68ab074c4f98403b174a49d1a, type: 3}
+      propertyPath: m_Speed
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 599814791, guid: fd05a4a68ab074c4f98403b174a49d1a, type: 3}
       propertyPath: m_Size.z
