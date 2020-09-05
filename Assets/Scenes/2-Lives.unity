@@ -6977,6 +6977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _readyText: {fileID: 312760449}
+  _winnerText: {fileID: 0}
   _scoreText: {fileID: 750033274}
   currentScore: 0
   _liveSprites:
@@ -6985,6 +6986,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8b96dfc98712a4e6eac14a1342951032, type: 3}
   - {fileID: 21300000, guid: 4d4ed2df9004c4eca959955f5924e350, type: 3}
   _livesImg: {fileID: 201235469}
+  _gameOverText: {fileID: 0}
+  _restartText: {fileID: 0}
+  _yellowText: {fileID: 0}
 --- !u!1 &599278051
 GameObject:
   m_ObjectHideFlags: 0
@@ -13412,13 +13416,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234158095}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3, y: 2.78, z: 1.64}
-  m_LocalScale: {x: 4, y: 1.3407762, z: 4}
+  m_LocalRotation: {x: 0, y: 0.702153, z: 0, w: 0.71202606}
+  m_LocalPosition: {x: 0.95, y: 1.222, z: -6.11}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 89.2, z: 0}
 --- !u!1 &1243382131
 GameObject:
   m_ObjectHideFlags: 0
@@ -17009,6 +17013,14 @@ MonoBehaviour:
   _speed: 3.5
   _wakka: {fileID: 1100769245}
   lives: 2
+  _dead: {fileID: 0}
+  isDead: 0
+  _initialPos: {fileID: 0}
+  canEatGhosts: 0
+  yellowCount: 115
+  _victory: {fileID: 0}
+  _bg: {fileID: 0}
+  ateGhost: 0
 --- !u!143 &1520179652
 CharacterController:
   m_ObjectHideFlags: 0
@@ -17055,6 +17067,14 @@ MonoBehaviour:
   _speed: 3.5
   _wakka: {fileID: 1100769245}
   lives: 3
+  _dead: {fileID: 0}
+  isDead: 0
+  _initialPos: {fileID: 0}
+  canEatGhosts: 0
+  yellowCount: 115
+  _victory: {fileID: 0}
+  _bg: {fileID: 0}
+  ateGhost: 0
 --- !u!1 &1546296678
 GameObject:
   m_ObjectHideFlags: 0

@@ -50,6 +50,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        MovePlayer();
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Cursor.visible = true;
@@ -63,9 +64,7 @@ public class Player : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.W))
         {
             _wakka.Stop();
-        }
-
-        MovePlayer();  
+        }  
 
         if (transform.position.x >= 21f)
         {
@@ -123,14 +122,6 @@ public class Player : MonoBehaviour
         _controller.enabled = true;
         _isMoving = true;
           
-    }
-    public void DamagePlayer()
-    {
-        lives --;
-        _dead.Play();
-        isDead = false;
-        Start();
-        // transform.position = _initialPos.transform.position;
     }
     public IEnumerator HitPlayer()
     {
